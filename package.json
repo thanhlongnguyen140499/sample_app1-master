@@ -1,0 +1,12 @@
+{
+  "name": "sample_app1",
+  "private": true,
+  "dependencies": {
+    "@rails/webpacker": "4.2.2",
+    "bootstrap": "3.4.1",
+    "jquery": "3.4.1"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^3.11.0"
+  }
+}
