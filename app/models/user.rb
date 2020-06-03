@@ -9,7 +9,8 @@ class User < ApplicationRecord
     validates:email,presence:true,length: {maximum:255},    format: {with: VALID_EMAIL_REGEX},
             uniqueness:true
     has_secure_password
-    validates:password,presence:true,length: {minimum:6}
+    #validates:password,presence:true,length: {minimum:6}
+    validates:password,presence:true,length: {minimum:6}, allow_nil: true
     def remember
       #remember_token = new_token
       self.remember_token = User.new_token
